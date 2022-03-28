@@ -1,0 +1,393 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, /* ol, ul, li, */
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+}
+/* Powyżej CSS RESET */
+/* Style od góry do dołu strony - według widoku strony www w przeglądarce
+css class patern, examples: header-nav-section1-a     header-nav-figure-a-img */
+/* Pojedyncze tagi jak header, main, footer - nie nadaję im nazwy klasy */
+/* Jeśli w main jest kilka elementów section to jeśli mają takie samo formatowanie to w nazwie klasy nie ma numeru
+Jeśli w main jest kilka elementów section to jeśli mają inne formatowanie to w nazwie klasy jest numer */
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+header{
+	position: sticky;
+	top: 0px;
+	background-color: white;
+	padding: 20px 5% 20px 5%; 
+	width: 100%;	
+	margin: 60px auto 110px;
+	box-sizing: border-box;
+}
+header nav{
+	display: flex;
+	flex-direction: row;
+	
+	align-items: center;
+	justify-content: space-between;
+
+}
+.header-nav-div{
+	display: flex;
+	flex-direction: row;
+	/* flex-wrap: wrap; */
+	font-size: 16px;
+}
+.header-nav-div-a{
+	color: black;
+	margin-right: 20px;
+}
+.header-nav-div:hover, .header-nav-div-a:hover{
+	color: green;
+	cursor: pointer;
+}
+.header-nav-div-figure2-img{
+	width: 20px;
+	height: 20px;
+}
+.header-nav-div-figure2-img:hover{
+	background-color: green;
+}
+.main-article-section1{
+	margin-bottom: 70px;
+}
+.main-article-section1-h2, .main-article-section1-h3, .main-article-section1-p{
+	width: 90%;
+	margin: 0 auto;
+}
+.main-article-section1-h1{
+	background:url("images/stylowe_ogrody_004-1.jpg") rgba(0, 255, 0, 0.7);
+	background-size:cover;
+	background-blend-mode: multiply;
+	/* The background-blend-mode CSS property sets how an element's background images should blend with each other 
+	and with the element's background color. */
+	color: white;
+	font-size:4vw;
+	text-align: center;
+	padding: 60px 0 60px;
+	margin-bottom: 60px;
+}
+.main-article-section1-h1-span{
+	border-bottom: 3px solid white;
+}
+.main-article-section1-h2{
+	font-size: 3.2vw;
+	text-align: center;
+	font-weight: 500;
+	margin-bottom: 70px;
+	color: #333;
+}
+.main-article-section1-h2-span{
+	border-bottom: 3px solid green;
+	padding-bottom: 10px;
+	display: inline-block;
+}
+.main-article-section1-h3{
+	font-size: 4.2vw;
+	text-align: center;
+	font-weight: 500;
+	margin-bottom: 30px;
+	color: #333;
+}
+.main-article-section1-p{
+	line-height: 1.5;
+	font-size: 14px;
+}
+.main-article-section2{
+	background:url("images/stylowe_ogrody_004-1.jpg") rgba(0, 255, 0, 0.7);
+	background-size:cover;
+	background-blend-mode: multiply;
+	color: white;
+	padding: 100px 0 100px;
+	margin-bottom: 70px;
+}
+.main-article-section2-h2{
+	font-size: 3.2vw;
+	margin: 0 0 20px 5%;
+	width: 95%;
+}
+.main-article-section2-h2-span{
+	border-bottom: 3px solid white;
+	padding-bottom: 10px;
+	display: inline-block;
+}
+.main-article-section2-p{
+	line-height: 1.5;
+	margin: 0 35% 20px 5%;
+	width: 60%;
+}
+.main-article-section3{
+	width: 90%;
+	margin:0 auto 40px ;
+}
+.main-article-section3-h2{
+	font-size: 3.2vw;
+	text-align: center;
+	font-weight: 500;
+	margin-bottom: 70px;
+	color: #333;
+}
+.main-article-section3-h2-span{
+	border-bottom: 3px solid green;
+	padding-bottom: 10px;
+	display: inline-block;
+}
+.main-article-section3-h3{
+	font-size: 3.7vw;
+	text-align: center;
+	font-weight: 500;
+	margin-bottom: 30px;
+	color: #333;
+}
+.main-article-section3-p{
+	line-height: 1.5;
+	font-size: 14px;
+	margin-top: 30px;
+}
+.main-article-section4{
+	background:url("images/stylowe_ogrody_004-1.jpg") rgba(0, 255, 0, 0.7);
+	background-size:cover;
+	background-blend-mode: multiply;
+	color: white;
+	width: 100%;
+	padding: 40px 5% 30px;
+	margin:0 0 40px ;
+	box-sizing: border-box;
+}
+.main-article-section4-h2{
+	color: white;
+	font-size:4vw;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.main-article-section4-h3{
+	font-size: 18px;
+	font-weight: 600;
+	margin: 40px 0 20px;	
+}
+.main-article-section4-h3:nth-of-type(1){
+	font-size: 18px;
+	font-weight: 600;
+	margin: 20px 0 20px;	
+}
+
+.main-article-section4-ul{
+	list-style-image: url("images/icons, 16px x 16px/bullet_key.png");
+}
+.main-article-section4-ul-li{
+	margin-bottom: 10px;
+}
+ul{
+	padding-left: 20px;
+}
+.main-article-section4 ul:nth-last-of-type(1){
+	padding-left: 20px;
+	margin-bottom: 0;
+}
+/* div użyty dla utworzeniu borderu o regulowanej długości */
+.linia-pod{
+	width: 130px;
+	height: 20px;
+	border-bottom: 3px solid white;
+}
+.linia-nad{
+	width: 130px;
+	height: 20px;
+	border-top: 3px solid white;
+}
+.main-article-section5-h2{
+	font-size: 3.5vw;
+	text-align: center;
+	font-weight: 500;
+	margin-bottom: 200px;
+	color: #333;
+}
+.main-article-section5-h2-span{
+border-bottom: 3px solid green;
+padding-bottom: 20px;
+display: inline-block;
+}
+.main-article-section6{
+	background:url("images/stylowe_ogrody_004-1.jpg") rgba(0, 255, 0, 0.7);
+	background-size:cover;
+	background-blend-mode: multiply;
+	color: white;
+	padding: 120px 7% 120px 7%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 120px;
+}
+.main-article-section6-h2{
+	font-size: 3vw;
+	font-weight: 500;
+;
+}
+.main-article-section6 a{
+	color: white;
+	padding: 10px 20px;
+	border: 3px solid white;
+	border-radius: 25px;
+	font-size: 14px;
+}
+footer{
+	display: flex;
+	flex-direction: row;
+	/* align-items:center; */
+	background-color: #333;
+	color: white;
+	padding: 60px 3% 130px;
+	box-sizing: border-box;
+}
+footer a{
+	color:white;
+}
+.footer-section1-h2,.footer-section2-h2,.footer-section3-h2,.footer-section4-h2 {
+	font-size: 25px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.footer-section1 p{
+	font-size: 14px;
+	line-height: 1.7;
+}
+.footer-section1 p:nth-of-type(-2n+4){
+	margin-bottom: 20px;  /* wybieram 2 i 4 <p> */
+}
+.footer-section1 p:nth-of-type(n+5){
+	margin-bottom: 10px;
+}
+/* .footer-section1-img{
+	width: 50px;
+	height: 50px;
+} */
+.footer-section1-div{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+.footer-section1-div a{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+.footer-section1-div:nth-of-type(1){
+	background-blend-mode: multiply;
+	background:url("images/facebook.png") rgba(51, 51, 51, 1);
+	background-size:cover;
+}
+.footer-section1-div:nth-of-type(2){
+	background-blend-mode: multiply;
+	background:url("images/google+.png") rgba(51, 51, 51, 1);
+	background-size:cover;
+}
+.footer-section1, .footer-section2, .footer-section3, .footer-section4{
+	width: 25%;
+}
+.footer-section3-ul{
+	padding: 0;
+}
+.footer-section3-ul-li{
+	line-height: 2;
+	padding: 0;
+	font-size: 14px;
+}
+.footer-setion4-div{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	height: 90%;
+}
+.footer-section4-div-img{
+	width: 30%;
+	height: 100px;
+	border:3px solid white;
+}
+@media (max-width: 1100px){
+	header nav{	
+		justify-content: space-around;
+	
+	}
+	.header-nav-div{
+		display: flex;
+		flex-direction: column;
+		font-size: 16px;
+	}   
+	.header-nav-div-a{
+		margin-bottom: 10px;
+	}
+}
+@media (max-width: 900px){
+	.main-article-section6{
+		display: flex;
+		flex-direction: column;
+	}
+	.main-article-section6-h2{
+		margin-bottom: 40px;
+	}
+	footer{
+		flex-direction: column;
+	}
+	.footer-section1, .footer-section2,.footer-section3{
+		margin-bottom: 40px;
+		width: 100%;
+	}
+	.footer-section4{
+		width: 100%;
+	}
+	.footer-section4-div-img{
+		width: auto;
+		height: 250px;
+		margin: 0 10px 10px 0;
+	}
+}
+
+
+
+
+
